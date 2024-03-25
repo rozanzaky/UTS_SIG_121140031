@@ -15,7 +15,7 @@
             height: 100%;
         }
         </style>
-        <title>Peta Persebaran Karawang </title>
+        <title>Peta Persebaran Administrasi Kab. Karawang</title>
     </head>
     <body>
         <div id="map">
@@ -690,6 +690,8 @@
         .className += ' fa fa-search';
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'<img src="legend/SaranaIbadah_6.png" /> Sarana Ibadah': layer_SaranaIbadah_6,'<img src="legend/SaranaPendidikan_5.png" /> Sarana Pendidikan': layer_SaranaPendidikan_5,'<img src="legend/KawasanIndustri_4.png" /> Kawasan Industri': layer_KawasanIndustri_4,'<img src="legend/Danau_3.png" /> Danau': layer_Danau_3,'<img src="legend/KawasanPemerintahan_2.png" /> Kawasan Pemerintahan': layer_KawasanPemerintahan_2,'<img src="legend/AdministrasiDesa_1.png" /> Administrasi Desa': layer_AdministrasiDesa_1,"Google Satellite": layer_GoogleSatellite_0,}).addTo(map);
         setBounds();
         </script>
     </body>
